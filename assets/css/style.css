@@ -1,0 +1,158 @@
+/* Default setting */
+:root {
+  --primary-color: #f44336;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+.row {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* main content */
+/* header */
+.header__nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__logo-link,
+.header__nav-link {
+  font-size: 2rem;
+  font-weight: 350;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-transform: capitalize;
+  color: white;
+}
+.header__logo-link,
+.header__nav-link:hover {
+  background: white;
+  color: #000;
+}
+.menu__icon {
+  display: none;
+  margin-left: auto;
+}
+.menu__icon i {
+  font-size: 2.5rem;
+}
+/* header__top */
+.header__top {
+  margin-top: 5rem;
+  background: var(--primary-color);
+  min-height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__top-content {
+  text-align: center;
+  color: white;
+}
+.header__top-content h2 {
+  font-size: 7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.header__top-content p {
+  margin: 2rem 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+.btn-get-start {
+  background: #000;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 300;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+.btn-get-start:hover {
+  background: rgb(151, 151, 151);
+  color: black;
+}
+/* main content */
+.lorem {
+  padding: 8rem 1.5rem;
+}
+.lorem-icon {
+  color: var(--primary-color);
+}
+.lorem-details {
+  line-height: 1.6;
+  display: grid;
+  gap: 5rem;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+.lorem-details p {
+  margin-top: 4rem;
+}
+.lorem-details h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.text-lighter {
+  color: #777;
+  font-weight: 300;
+}
+.lorem-2 {
+  background: #f1f1f1;
+}
+/* quote */
+.quote {
+  padding: 7rem;
+  text-align: center;
+  background: #777;
+  color: white;
+  font-size: 2.5rem;
+}
+/* footer */
+.footer {
+  text-align: center;
+  padding: 3rem;
+}
+.footer__icon-link {
+  font-size: 2.4rem;
+  color: #777;
+  margin-right: 0.6rem;
+  display: inline-block;
+}
+.footer__icon-link:hover {
+  color: var(--primary-color);
+}

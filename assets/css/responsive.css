@@ -1,0 +1,51 @@
+@media only screen and (max-width: 650px) {
+  .menu__nav {
+    position: absolute;
+    top: 100%;
+    left: -300%;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+  }
+  .menu__nav.active {
+    animation: animateleft 0.4s forwards;
+  }
+  .header__nav-list {
+    flex-direction: column;
+  }
+  .header__nav-link {
+    color: black;
+    transition: all 0.5s ease-in-out;
+  }
+  .header__nav-link:hover {
+    background: 0;
+    margin-left: 1.5rem;
+  }
+  .menu__icon {
+    cursor: pointer;
+    color: white;
+    padding-right: 1.5rem;
+    display: block;
+  }
+  /*  */
+  .lorem-details {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .lorem-top {
+    order: -1;
+  }
+  .lorem {
+    padding: 4rem 1.5rem;
+  }
+}
+@keyframes animateleft {
+  from {
+    left: -300%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
